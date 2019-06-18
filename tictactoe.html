@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>
+
+    </title>
+</head>
+<style>
+    body,
+    html {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .heading {
+        height: 8%;
+        width: 100%;
+        text-align: center;
+        font-family: 'Karla', sans-serif;
+        font-size: 250%;
+        padding: 8px;
+        font-weight: bold;
+        color: whitesmoke;
+        position: relative;
+        background-color: rgb(93, 9, 153);
+        box-shadow: 0px 3px 5px #757373;
+    }
+
+    .leftpane {
+        width: 30%;
+        height: 85%;
+        float: left;
+        padding: 2%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 200%;
+    }
+
+    .board {
+        width: 40%;
+        margin-left: 35%;
+        height: 40%;
+        margin-top: 5%;
+    }
+
+    .x{
+        font-weight: bold;
+        color: red;
+    }
+
+    .o{
+        font-weight: bold;
+        color: royalblue;
+    }
+
+    .button{
+        background-color: whitesmoke;
+        border: none;
+        color: darkorchid;
+        padding: 2px 2px;
+        text-align: center;
+        box-shadow: 1px 1px 3px 3px lightgrey;
+        display: inline-block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="heading">
+        test
+    </div>
+    <div class="leftpane">
+        Player :
+        <span id="xplayer" class="x">
+
+        </span>
+        <span id="oplayer" class="o">
+
+        </span>
+        <br><br>
+        Match :
+        <span id="match">
+            1
+        </span>
+        / 5
+        <br><br>
+        Score:
+        <br>
+        <span class="x">
+            X
+        </span>
+        -
+        <span id="xscore" class="x">
+            0
+        </span>
+        <br>
+        <span class="o">
+            O
+        </span>
+        -
+        <span id="oscore" class="o">
+            0
+        </span>
+        <br><br>
+        <form id="play">
+            <input type="submit" value="Play" class="button">
+        </form>
+    </div>
+    <div class="board">
+        Board
+    </div>
+</body>
+<script>
+    function play(){
+        player = [X, O];
+        document.getElementById("player").innerHTML = player[X, O];
+    }   
+
+</script>
+
+</html>
